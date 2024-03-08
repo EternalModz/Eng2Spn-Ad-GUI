@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator GUI</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        #translator-container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+
+        #language-select {
+            margin-bottom: 20px;
+        }
+
+        #mic-icon {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #555;
+        }
+
+        #switch-icon {
+            font-size: 24px;
+            margin-left: 10px;
+            color: #555;
+            cursor: pointer;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="translator-container">
+        <div id="language-select">
+            <button class="button" onclick="toggleLanguage()">
+                <span id="mic-icon">&#127908;</span> English
+            </button>
+            <span id="switch-icon" onclick="switchLanguages()">&#8646;</span>
+            <button class="button" onclick="toggleLanguage()">
+                <span id="mic-icon">&#127908;</span> Español
+            </button>
+        </div>
+        <!-- Translator content (to be added) -->
+    </div>
+
+    <script>
+        function toggleLanguage() {
+            // Add functionality to toggle between English and Spanish modes
+            console.log('Toggle language');
+        }
+
+        function switchLanguages() {
+            // Add functionality to switch languages
+            console.log('Switch languages');
+        }
+    </script>
+</body>
+
+</html>
